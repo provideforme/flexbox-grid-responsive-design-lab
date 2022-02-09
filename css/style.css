@@ -96,7 +96,11 @@ img{
   width: 50%;
   padding: 2rem;
   margin: 0;
-  background-color: #50b167
+  background-color: #50b167;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 #contact p:first-child{
@@ -110,6 +114,7 @@ img{
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: auto auto auto auto;
+    text-align: justify;
     grid-template-areas: 
     "status name" 
     "img occupation" 
@@ -120,34 +125,40 @@ img{
   #status{
     grid-area: status;
     text-align: left;
+    margin: 10px 0 0 10px;
   }
-
+  
   #name{
     grid-area: name;
-  }
+    margin: 0 auto;
 
+  }
+  
   img {
     grid-area: img;
+    margin: 0 auto;
   }
-
+  
   #occupation{
     grid-area: occupation;
   }
-
+  
   #brand {
-    display: flex ;
+    display: inline ;
     grid-area: brand;
   }
-
+  
   #contact {
     grid-area: contact;
+    text-align: center;
   }
-
+  
   #offer {
     grid-area: offer;
   }
-  *{
-    margin: 0;
-  }
+  
+  #brand > p {
+    border-left: #53cf75;
 
+  }
 }
