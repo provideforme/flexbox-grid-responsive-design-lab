@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+/* resets font size to be 62.5% of the user preference - 
+   in most browser configurations this will be 10px */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: gray;
+/* Use a system font, if none are available use an available sans-sarif   font */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  width: 300px;
+  text-align: center;
+  background-color: white;
+  font-size: 2rem;
+}
+
+#status {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:  gray;
+}
+
+img{
+  border: 4px solid #53cf75;
+  border-radius: 100%;
+}
+
+#occupation {
+  background-color: rgb(238, 238, 238);
+  
+}
+
+#brand {
+  visibility: collapse;
+  justify-content: center;
+}
+
+#offer {
+
+}
+
+#offer > p:nth-of-type(2) {
+  font-size: 1.8rem;
+  margin: -10px;
+}
+
+#contact {
+  grid-template: 50% 50%;
+}
