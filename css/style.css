@@ -110,7 +110,7 @@ img{
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: auto auto auto auto;
-    grid-area: 
+    grid-template-areas: 
     "status name" 
     "img occupation" 
     "img brand" 
